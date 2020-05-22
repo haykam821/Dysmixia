@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "dysmixia",
+	"version": "1.0.0",
+	"name": "Dysmixia",
+	"description": "Forces the Minceraft title screen to show.",
+	"authors": [
+		"haykam821"
+	],
+	"contact": {
+		"homepage": "https://github.com/haykam821/Dysmixia#readme",
+		"issues": "https://github.com/haykam821/Dysmixia/issues"
+	},
+	"environment": "client",
+	"mixins": [
+		"dysmixia.mixin.json"
+	],
+	"license": "MIT",
+	"icon": "assets/dysmixia/icon.png",
+	"depends": {
+		"fabricloader": ">=0.4.0"
+	}
+}
