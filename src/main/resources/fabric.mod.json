@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "dysmixia",
-	"version": "1.0.0",
+	"version": "${version}",
 	"name": "Dysmixia",
 	"description": "Forces the Minceraft title screen to show.",
 	"authors": [
