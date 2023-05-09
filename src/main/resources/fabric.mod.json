@@ -18,6 +18,6 @@
 	"license": "MIT",
 	"icon": "assets/dysmixia/icon.png",
 	"depends": {
-		"fabricloader": ">=0.4.0"
+		"fabricloader": ">=0.12.0"
 	}
 }

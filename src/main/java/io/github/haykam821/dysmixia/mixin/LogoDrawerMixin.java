@@ -7,17 +7,16 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import net.minecraft.client.gui.screen.TitleScreen;
+import net.minecraft.client.gui.LogoDrawer;
 
-@SuppressWarnings("target")
-@Mixin(value = TitleScreen.class, remap = false)
-public class TitleScreenMixin {
+@Mixin(LogoDrawer.class)
+public class LogoDrawerMixin {
 	@Shadow
 	@Mutable
-	private boolean field_17776;
+	private boolean minceraft;
 
 	@Inject(method = "<init>*", at = @At("TAIL"))
 	public void forceMinceraft(CallbackInfo ci) {
-		this.field_17776 = true;
+		this.minceraft = true;
 	}
 }
